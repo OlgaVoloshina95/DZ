@@ -1,0 +1,15 @@
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\bin\Debug\net6.0\DZ.exe
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\bin\Debug\net6.0\DZ.deps.json
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\bin\Debug\net6.0\DZ.runtimeconfig.json
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\bin\Debug\net6.0\DZ.dll
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\bin\Debug\net6.0\DZ.pdb
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\obj\Debug\net6.0\DZ.csproj.AssemblyReference.cache
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\obj\Debug\net6.0\DZ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\obj\Debug\net6.0\DZ.AssemblyInfoInputs.cache
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\obj\Debug\net6.0\DZ.AssemblyInfo.cs
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\obj\Debug\net6.0\DZ.csproj.CoreCompileInputs.cache
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\obj\Debug\net6.0\DZ.dll
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\obj\Debug\net6.0\refint\DZ.dll
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\obj\Debug\net6.0\DZ.pdb
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\obj\Debug\net6.0\DZ.genruntimeconfig.cache
+C:\Users\lapol\OneDrive\Рабочий стол\DZ\obj\Debug\net6.0\ref\DZ.dll
