@@ -5,11 +5,18 @@
 
 Console.WriteLine("Введите число");
 int a=Convert.ToInt32(Console.ReadLine());
-if (a>99)
+number = Math.Abs (number);
+
+if (number>100)
 {
-Console.WriteLine(Convert.ToString(a)[2]);
+Console.WriteLine("В числе нет третьей цифры");
 }
 else
 {
-    Console.WriteLine("Третьей цифры нет");
+   while (number >= 1000)
+   {
+    number /= 10;
+   }
+   int digit3 = number % 10;
+    Console.WriteLine(digit3);
 }
