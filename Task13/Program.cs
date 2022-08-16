@@ -4,10 +4,10 @@
 // 32679 -> 6
 
 Console.WriteLine("Введите число");
-int a=Convert.ToInt32(Console.ReadLine());
+int number = Convert.ToInt32(Console.ReadLine());
 number = Math.Abs (number);
 
-if (number>100)
+if (number<100)
 {
 Console.WriteLine("В числе нет третьей цифры");
 }
