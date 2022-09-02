@@ -11,62 +11,49 @@ Console.Write("Введите m: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите n: ");
 int n = Convert.ToInt32(Console.ReadLine());
+Console.Clear();
+Console.WriteLine($"m = {m}, n = {n}.");
+double[,] array = new double[m, n];
+CreateArrayDouble(array);
+WriteArray(array);
+Console.Write("Введите строку элемента: ");
+int i = Convert.ToInt32(Console.ReadLine())-1;
+Console.Write("Введите введите позицию элемента в строке: ");
+int j = Convert.ToInt32(Console.ReadLine())-1;
+Console.WriteLine();
+Console.WriteLine(SearchArray(i,j,array));
 
-Console.Write("Введите координаты позиции элемента, разделенных запятой: ");
-
-string? positionElement = Console.ReadLine();
-positionElement = RemovingSpaces(positionElement);
-int[] position = ParserString(positionElement);
-
-if(position[0] <= m 
-&& position[1] <= n 
-&& position[0] >= 0 
-&& position[1] >= 0) 
+void CreateArrayDouble(double[,] array) //Функция заполнения массива
 {
-  double result = array[position[0]-1, position[1]-1];
-  Console.Write($"Значение элемента: {result}");
-}
-else Console.Write($"такого элемента в массиве нет.");
-
-int[] ParserString(string input)
-{
-  int countNumbers = 1;
-  for (int i = 0; i < input.Length; i++)
+  for (int i = 0; i < m; i++)
   {
-      if (input[i] == ',')
-          countNumbers++;
-  }
-
-  int[] numbers = new int[countNumbers];
-
-  int numberIndex = 0;
-  for(int i = 0; i < input.Length; i++)
-  {
-    string subString = String.Empty;
-
-    while (input[i] != ',')
+    for (int j = 0; j < n; j++)
     {
-      subString += input[i].ToString();
-      if (i >= input.Length - 1)
-        break;
-      i++;
-    }
-    numbers[numberIndex] = Convert.ToInt32(subString);
-    numberIndex++;
-  }
-
-  return numbers;
-}
-
-string RemovingSpaces (string input)
-{
-  string output = String.Empty;
-  for (int i = 0; i < input.Length; i++)
-  {
-    if (input[i] != ' ') 
-    {
-      output += input[i];
+      array[i, j] = new Random().NextDouble() * 20 - 10;
     }
   }
-  return output;
+}
+
+void WriteArray (double[,] array) //Функция вывода массива
+{
+Console.Clear();
+Console.WriteLine("Сгенерирован следующий массив");
+for (int i = 0; i < m; i++)
+  {
+      for (int j = 0; j < n; j++)
+      {
+        double alignNumber = Math.Round(array[i, j], 1);
+        Console.Write(alignNumber + " ");
+      }
+      Console.WriteLine();
+  }
+}
+string SearchArray(int i,int j, double[,] array)//Поиск элемента
+{
+  if ((array.GetLength(0)<i)^(array.GetLength(1)<j))
+    return "Такого значения нет";
+    else
+    {
+      return Convert.ToString(Math.Round(array[i, j], 1));
+    }
 }
